@@ -284,33 +284,6 @@ pytest tests/ -v
 
 ---
 
-## LinkedIn Post
-
-If you found this project helpful and want to share it, here's a post template:
-
-> Basic RAG is dead. 🪦
->
-> I built a Self-Correcting RAG Agent that doesn't just retrieve and generate — it evaluates its own retrieval quality, falls back to web search when local docs are irrelevant, and scores its own answers for hallucinations.
->
-> The pipeline runs as an 8-node LangGraph state machine:
-> query_rewrite → retrieve → evaluate → [route] → web_search → refine → generate → hallucination_check
->
-> What makes it different from naive RAG:
-> ▸ LLM-as-judge evaluates every retrieved doc (relevance score 0-1)
-> ▸ Falls back to DuckDuckGo web search when retrieval is irrelevant
-> ▸ Query rewriting with Multi-Query + HyDE for better recall
-> ▸ Hallucination checker scores how well the answer is grounded in sources
-> ▸ Side-by-side CRAG vs Naive RAG comparison
-> ▸ Per-node latency dashboard for observability
->
-> Tech stack: LangGraph, DeepSeek, BGE embeddings, FAISS, FastAPI, Next.js 14
->
-> Code: https://github.com/sachindagar001/CorrectiveRAG
->
-> #RAG #LangGraph #LLM #MachineLearning #AI #AgenticAI #FullStack
-
----
-
 ## License
 
 MIT — feel free to use this for your portfolio, job applications, or as a starting point for production RAG systems.
